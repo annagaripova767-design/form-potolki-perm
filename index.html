@@ -2,71 +2,91 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>FORM — контакты</title>
+    <title>ФОРМ — контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #56bbc3;
-            color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
         .card {
-            background: #ffffff;
-            padding: 24px;
-            border-radius: 18px;
+            background: #fff;
+            padding: 26px;
+            border-radius: 20px;
             max-width: 380px;
             width: 100%;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
         h1 {
-            margin-bottom: 6px;
+            margin: 0;
+            font-size: 28px;
         }
         .subtitle {
             font-size: 14px;
-            margin-bottom: 16px;
+            margin: 8px 0 18px;
         }
-        a.button {
-            display: block;
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin: 10px 0;
             padding: 14px;
-            background: #000;
+            border-radius: 14px;
             color: #fff;
             text-decoration: none;
-            border-radius: 12px;
             font-weight: bold;
-        }
-        .phones {
-            margin: 14px 0;
             font-size: 15px;
         }
+        .telegram { background: #2AABEE; }
+        .telegram-channel { background: #229ED9; }
+        .max { background: #7A3EF0; }
+
         .phones a {
-            color: #000;
-            text-decoration: none;
             display: block;
-            margin: 4px 0;
+            margin: 6px 0;
+            color: #000;
             font-weight: bold;
+            text-decoration: none;
         }
         .address {
             margin-top: 14px;
             font-size: 14px;
+        }
+        .address a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <h1>FORM</h1>
+    <h1>ФОРМ</h1>
     <div class="subtitle">Натяжные потолки и комплектующие</div>
 
-    <a class="button" href="https://t.me/FORM_perm" target="_blank">Telegram</a>
-    <a class="button" href="https://max.ru/u/f9LHodD0cOI9UL6wZOJcNnI-BtSL2xuwLF-a76EXnc52k82VLUDxTLrxm0U" target="_blank">MAX</a>
-    <a class="button" href="https://t.me/amegapotolki" target="_blank">Telegram-канал</a>
+    <a class="btn telegram" href="https://t.me/FORM_perm" target="_blank">
+        <i class="fab fa-telegram"></i> Telegram
+    </a>
+
+    <a class="btn max" href="https://max.ru/u/f9LHodD0cOI9UL6wZOJcNnI-BtSL2xuwLF-a76EXnc52k82VLUDxTLrxm0U" target="_blank">
+        <i class="fas fa-comment-dots"></i> MAX
+    </a>
+
+    <a class="btn telegram-channel" href="https://t.me/amegapotolki" target="_blank">
+        <i class="fab fa-telegram"></i> Telegram-канал
+    </a>
 
     <div class="phones">
         <a href="tel:+79197007331">📞 Основной: 8 919 700-73-31</a>
@@ -76,7 +96,9 @@
     <div class="address">
         г. Пермь<br>
         ул. Стахановская, 54Г<br><br>
-        <a href="https://yandex.ru/maps/-/CLhEzY23" target="_blank">📍 Открыть на карте</a>
+        <a href="https://yandex.ru/maps/-/CLhEzY23" target="_blank">
+            📍 Открыть на карте
+        </a>
     </div>
 </div>
 
