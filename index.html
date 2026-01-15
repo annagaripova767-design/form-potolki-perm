@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>ФОРМ — контакты</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ФОРМ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Иконки -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #56bbc3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #4fb7b7;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        .card {
-            background: #ffffff;
-            padding: 28px;
-            border-radius: 22px;
-            max-width: 380px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
-        }
+    .card {
+      background: rgba(0,0,0,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 30px;
-            letter-spacing: 1px;
-        }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
 
-        .subtitle {
-            font-size: 14px;
-            margin: 8px 0 20px;
-        }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
 
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
+    .tg { background: #229ED9; }
+    .tg-channel { background: #0088cc; }
+    .max { background: #000; }
+    .map { background: #e53935; }
+
+    .phones {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .address {
+      margin-top: 20px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>ФОРМ</h1>
+
+    <a class="btn tg" href="https://t.me/FORM_perm" target="_blank">
+      <i class="fa-brands fa-telegram"></i> Telegram
+    </a>
+
+    <a class="btn tg-channel" href="https://t.me/amegapotolki" target="_blank">
+      <i class="fa-solid fa-bullhorn"></i> Telegram канал
+    </a>
+
+    <a class="btn max" href="https://max.ru/u/f9LHodD0cOI9UL6wZOJcNnI-BtSL2xuwLF-a76EXnc52k82VLUDxTLrxm0U" target="_blank">
+      <i class="fa-solid fa-comment"></i> MAX
+    </a>
+
+    <div class="phones">
+      <div>📞 8 919 700-73-31</div>
+      <div>📞 8 342 270-02-52</div>
+    </div>
+
+    <div class="address">
+      г. Пермь, ул. Стахановская 54Г
+    </div>
+
+    <a class="btn map" href="https://yandex.ru/maps/-/CLhEzY23" target="_blank">
+      <i class="fa-solid fa-location-dot"></i> Открыть на карте
+    </a>
+  </div>
+</body>
+</html>
