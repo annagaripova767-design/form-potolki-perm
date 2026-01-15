@@ -22,32 +22,33 @@ body {
   background: #ffffff;
   width: 100%;
   max-width: 380px;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
   text-align: center;
 }
 
 h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
 .subtitle {
   font-size: 14px;
   color: #555;
-  margin-bottom: 20px;
+  margin: 6px 0 22px;
 }
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   color: #fff;
-  padding: 14px;
-  border-radius: 12px;
+  padding: 15px;
+  border-radius: 16px;
   font-size: 16px;
   margin-bottom: 12px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -61,27 +62,19 @@ h1 {
 .telegram { background: #229ED9; }
 .telegram-channel { background: #0088cc; }
 .max { background: #7A3EFF; }
+.phone-btn { background: #111; }
+.phone-option { background: #444; font-size: 15px; }
+.map-btn { background: #2E7D32; }
 
-.phone {
-  font-size: 18px;
-  margin: 8px 0;
-}
-
-.phone a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.map-btn {
-  margin-top: 15px;
-  background: #2E7D32;
+#callMenu {
+  display: none;
+  margin-top: 6px;
 }
 
 .address {
   font-size: 14px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 </style>
 </head>
@@ -104,11 +97,13 @@ h1 {
     <i class="fas fa-bullhorn"></i> Telegram-канал
   </a>
 
-  <div class="phone">
-    <a href="tel:89197007331">8 919 700-73-31</a>
-  </div>
-  <div class="phone">
-    <a href="tel:83422700252">8 342 270-02-52</a>
+  <a class="btn phone-btn" href="#" onclick="openCallMenu()">
+    <i class="fas fa-phone"></i> Позвонить
+  </a>
+
+  <div id="callMenu">
+    <a class="btn phone-option" href="tel:89197007331">8 919 700-73-31</a>
+    <a class="btn phone-option" href="tel:83422700252">8 342 270-02-52</a>
   </div>
 
   <a class="btn map-btn" href="https://yandex.ru/maps/-/CLhEzY23" target="_blank">
@@ -119,6 +114,13 @@ h1 {
     г. Пермь, ул. Стахановская 54Г
   </div>
 </div>
+
+<script>
+function openCallMenu() {
+  const menu = document.getElementById('callMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+</script>
 
 </body>
 </html>
